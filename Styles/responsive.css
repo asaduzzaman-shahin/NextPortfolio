@@ -1,0 +1,386 @@
+@media screen and (max-width: 999px) {
+
+    .nevMenu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    width: 70%!important;
+    border-radius: 10px
+;
+    background: #262626;
+}
+
+.aboutMe {
+    text-align: center;
+    margin-top: 30px;
+}
+.myCV .btnStyle {
+    width: 80%!important;
+    margin: auto;
+}
+
+.singlePartner {
+    background: #171718;
+    color: white;
+    border-radius: 80px
+;
+    height: 390px
+;
+    text-align: center;
+    transition: 1s;
+    margin-bottom: 100px
+;
+margin-top: 100px;
+}
+    /* section#map {
+        width: 100%;
+        overflow-y: hidden;
+    }
+
+    .customBorder{
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .menuWraper {
+        display: none;
+    }
+    .meWrapper {
+      
+        width: 100%;
+       
+      
+    }
+    .socialLink {
+        width: 100%;
+        text-align: center!important;
+    }
+
+    
+    .aboutMe {
+        padding-left: 70px;
+    }
+
+    .me {
+        background: transparent;
+        line-height: 1.5rem;
+        display: flex;
+        width: 500px;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        margin-bottom: 50px;
+        
+    }
+    button.btnStyle {
+        margin: auto;
+    }
+
+    .myPic {
+       
+        margin: auto;
+    }
+    .aboutPic {
+        position: relative;
+        height: 100%;
+    }
+    .singlePartner {
+        background: #171718;
+        color: white;
+        border-radius: 80px;
+        height: 390px;
+        margin-bottom: 150px;
+        text-align: center;
+        transition: 1s;
+    }
+
+    .singleClient{
+        width: 370px;
+    }
+
+
+    .imgWrapper {
+        width: 200px;
+        height: 200px;
+        border: 20px solid rgb(23, 23, 24);
+        border-radius: 100px;
+        transform: translate(60px, -94px);
+    }
+    
+
+
+ 
+
+    .me {
+        background: transparent;
+        line-height: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        margin-top: 100px;
+    }
+    section#portfolio {
+        width: 100%;
+        overflow-y: hidden;
+    }
+    .me h1 {
+        font-size: 50px;
+        font-weight: bolder;
+        color: red;
+    }
+    .myPic {
+        width: 60%;
+    }
+    #particles-js {
+        min-height: 1000px!important;
+    } */
+  
+}
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+
+    button.navBtn {
+        display: block!important;
+    }
+    .myPic {
+        width: 340px!important;
+
+    }
+    nav.active {
+        /* display: none;  */
+        /* position: absolute;
+        left: 999px; */
+        transition: 1s;
+        transform: translate(215px, 0px);
+    transition: 1s;
+    }
+
+    .meWrapper {
+        position: absolute;
+        top: 585px!important;
+        left: 50%;
+        transform: translate(-50% ,-50%);
+        
+    }
+    #particles-js {
+        background-color: #262626;
+        position: relative;
+        height: 120vh!important
+    ;
+        min-height: 750px
+    ;
+        width: 100vw
+    ;
+    }
+    nav {
+        transition: 1s;
+    }
+
+    .nevMenu {
+        width: 150px!important;
+        height: 100vh;
+        line-height: 3rem;
+        background: transparent!important;
+    }
+
+    .nevMenu nav ul li:last-child {
+        width: 100%!important;
+        border-bottom: none;
+        text-align: center!important;
+    }
+
+    .nevMenu nav ul {
+        display: flex;
+        flex-direction: column;
+        background-color: orangered;
+    }
+    #nevResponsive {
+        display: block!important;
+        background: brown;
+        text-align: center;
+    }
+
+
+    button.navBtn {
+        width: 80%;
+        background: black;
+        color: tomato;
+        font-size: 30px;
+        background: transparent;
+    }
+    .responsiveMenuWraper {
+        position: absolute;
+        top: 0px;
+        right: 50px;
+        font-size: 50px;
+        display: inline-block!important;
+        color: red;
+        z-index: 5;
+    }
+    .responsiveMenuWraper a i {
+        color: red;
+    }
+    
+
+    li.nav-item {
+        text-align: center;
+        background: black;
+        z-index: 10;
+    }
+    ul.navbar-nav {
+        background: white;
+        color: tomato;
+    }
+    li.nav-item a {
+        font-size: 20px;
+        color: tomato;
+    }
+    .navbar a {
+        text-align: center;
+        margin: auto;
+    }
+    button.navbar-toggler {
+        top: 10px;
+        right: 40px;
+        font-size: 30px;
+        position: fixed;
+    }
+
+    /* .menuWraper {
+        display: none;
+    } */
+    .clintTitle {
+        text-align: center;
+        /* padding: 90px 271px; */
+        width: 420px;
+        margin: auto;
+    }
+
+    .clintTitle {
+        text-align: center;
+        padding: 0px;
+    }
+
+    .me h1 {
+        font-size: 50px;
+        font-weight: bolder;
+        color: red;
+    }
+  
+}
+
+
+@media screen and (max-width: 688px) {
+
+    .nevMenu {
+        position: fixed;
+        top: 0;
+        right: 25px!important
+    ;
+        z-index: 2;
+        border-radius: 10px
+    ;
+    }
+    .clintWraper {
+        display: inline;
+        padding: 0px;
+    }
+    .socialLink {
+        width: 90%;
+        text-align: end;
+    }
+    .me p {
+        color: white;
+        width: 81%;
+    }
+    .how-i-work-item .arrow-dashed-img {
+        top: 0;
+        right: 0;
+        position: inherit!important;
+    }
+    .clintTitle {
+        width: 100%!important;
+        margin: auto;
+        text-align: center;
+        padding: 11px;
+    }
+
+    #particles-js {
+      
+        min-height: 900px;
+    }
+
+
+    .playBtnStyle {
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        border: 7px solid tomato;
+        border-radius: 48px;
+        right: 0px;
+        padding: 5px;
+        transform: translate(-80%, -50px);
+    }
+    .me h1 {
+        font-size: 50px;
+        font-weight: bolder;
+        color: red;
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 500px){
+    .text {
+        margin-top: 10px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+    }
+    .text p {
+        font-size: 16px;
+        font-weight: 600;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0 0 20px
+    ;
+    }
+
+    .myCV .btnStyle {
+        width: 80%!important;
+        margin: auto;
+    }
+
+    .mobileImg {
+        width: 100%!important;
+        margin: auto;
+    }
+
+    .cardBody {
+        padding: 0px 15px !important
+    ;
+    }
+
+    .footer .copyright {
+        background: rgba(255, 255, 255, 0.03);
+        padding: 30px 0;
+        text-align: center;
+    }
+
+    ul.footer-links {
+        width: 130px
+    ;
+        margin: auto!important;
+    }
+}
