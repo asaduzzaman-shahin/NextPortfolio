@@ -12,10 +12,46 @@
     padding: 0px;
     box-sizing: border-box;
     scroll-behavior: smooth;
-  
-
-
 }
+
+
+:root{
+    --first-color: #ef32d9;
+    --second-color: #89fffd;
+    --size: 100px;
+    --speed: 4s;
+}
+
+
+.aa{
+    overflow: hidden !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aa:before{
+    content: '';
+    position: absolute;
+    width: var(--size);
+    height: 140%;
+    background: linear-gradient(var(--first-color), var(--second-color));
+    animation: animate var(--speed) linear infinite;
+}
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+body{
+    overflow-x: hidden!important;
+    cursor: url("../gallery/Arrow.cur"),auto;
+}
+
 .mobileImg {
     width: 80%;
     margin: auto;
@@ -576,11 +612,17 @@ section#about {
     cursor: pointer;
 }
 
+.footer-widget img:hover {
+    box-shadow: 3px 6px 9px #d0d0d0, -3px -6px 9px #000000;
+    cursor: pointer;
+}
+
 
 .nevMenu nav ul {
     list-style: none;
     margin: 0px
 ;
+box-shadow: inset 1px 1px 10px 6px #000000;
     padding: 0px
 ;
     display: flex;
@@ -596,13 +638,14 @@ section#about {
 .nevMenu {
     position: fixed;
     top: 0;
-    right: 25px;
+    right: 40px;
     z-index: 2;
     width: 77%;
     border-radius: 10px;
     background: #262626;
     padding: 10px 0px
 ;
+overflow: hidden;
 }
 
 .wh{
@@ -635,6 +678,16 @@ section#videoSec {
 .nevMenu nav ul li:last-child {
     width: 24%;
     border-bottom: none;
+    animation: shake 10s ease-in-out infinite;
+}
+
+@keyframes shake{
+    0%{
+        transform: translate(0px, 0px);
+    }
+    50%{
+        transform: translate(100px, 0px);
+    }
 }
 .nevMenu nav ul li:last-child:hover {
 
@@ -726,6 +779,8 @@ section#\#about {
 .aboutMe h2 {
     font-weight: bolder;
     font-size: 33px;
+    box-shadow: inset 1px 1px 10px 6px #000000;
+    padding: 0 12px;
 }
 
 .aboutMe h6 {
@@ -761,6 +816,7 @@ margin: 10px;
     color: white;
     padding: 7px 20px;
     border-radius: 10px;
+    box-shadow: inset 1px 1px 10px 6px #000000;
 }
 
 .sectionTitle h1 {
@@ -827,13 +883,14 @@ margin: 10px;
 }
 
 
-.cardIconWrap {padding: 5px;border: 4px solid orangered;border-radius: 100%;/* background: orangered; */}
+.cardIconWrap {padding: 5px;border: 4px solid orangered;border-radius: 100%;box-shadow: inset 1px 1px 10px 6px #000000;}
 
 .cardIconWrap button {
     border: 2px solid red;
     padding: 10px;
     border-radius: 100%;
     position: relative;
+    box-shadow: inset 1px 1px 10px 6px #000000;
 }
 
 .cardIconWrap button span {
@@ -843,6 +900,7 @@ margin: 10px;
     background: orangered;
     color: white;
     font-size: 42px;
+    box-shadow: inset 1px 1px 10px 6px #000000;
 }
 
 
@@ -1203,6 +1261,13 @@ element.style {
     background: #1b1b1b;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
+    box-shadow: inset 1px 1px 10px 6px #ff0000;
+}
+
+.footer-widget img {
+    box-shadow: inset 1px 1px 10px 6px #000000;
+    padding: 10px
+;
 }
 
 .section-heading {
@@ -1512,10 +1577,12 @@ padding-bottom: 100px;
 
 .imgWrapper img {
     background: aliceblue;
-    margin: 10px;
-    width: 150px;
-    height: 150px;
-    border-radius: 100px;
+    width: 100%;
+    height: 100%
+;
+    border-radius: 100px
+;
+box-shadow: inset 1px 1px 10px 6px #000000;
 }
 .imgWrapper {
     width: 200px;
@@ -1540,6 +1607,7 @@ padding-bottom: 100px;
 }
 .partnerDetails {
     margin-top: -40px;
+    box-shadow: inset 1px 1px 10px 6px #000000;
 }
 .newSocialLink a i:hover {
     opacity: 2;
@@ -1681,6 +1749,7 @@ span.readMore a {
     display: flex;
 }
 .icon span {
+    box-shadow: inset 1px 1px 10px 6px #000000;
     font-size: 40px;
     text-align: center;
     border: 2px solid tomato;
@@ -1732,26 +1801,48 @@ input#mailInput {
     font-family: sans-serif;
     font-weight: bold;
     opacity: 0.7;
+    background: #ffffff1f;
+    border: 1px solid red;
+    color: #00ff14d9;
+    box-shadow: inset 1px 1px 10px 6px #f73718e3;
 }
 
 textArea {
-    width: 100%;
+
     resize: none;
-    outline: none;
     border: 2px solid tomato;
     padding: 10px;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0px;
+    border-radius: 20px;
+    outline: none;
+    font-family: system-ui;
+    font-weight: normal;
+   
+    opacity: 0.7;
+    background: #ffffff1f;
+    border: 1px solid red;
+    color: #00ff14d9;
+    box-shadow: inset 1px 1px 10px 6px #f73718e3;
 }
 input#sendBtn {
-    width: 100%;
-    background: tomato;
-    padding: 10px;
+    width: 49%;
+    padding: 10px
+;
+    background: transparent;
     outline: none;
-    border: 2px solid;
-    border-radius: 10px;
-    box-shadow: 0px 0px 3px 1px;
+    color: tomato;
+    font-family: cursive;
+    font-weight: bolder;
+    font-size: 20px;
+    border-radius: 10px
+;
+box-shadow: inset 1px 1px 10px 6px #f73718e3;
 }
 
 select#mailInput {
+    font-weight: bold;
     width: 100%;
     padding: 10px;
     margin: 10px 0px;
@@ -1760,7 +1851,14 @@ select#mailInput {
     font-family: sans-serif;
     font-weight: bold;
     opacity: 0.7;
+    background: #ffffff1f;
+    border: 1px solid red;
+    color: #00ff14d9;
+    box-shadow: inset 1px 1px 10px 6px #f73718e3;
 
+}
+textArea:hover {
+    background: #283e49;
 }
 .form {
     margin-top: 50px;
@@ -1781,10 +1879,7 @@ select#mailInput {
 .footer .footer-top {
     padding: 80px 0 50px 0;
 }
-.footer .copyright {
-    background: rgba(255, 255, 255, 0.03);
-    padding: 30px 0;
-}
+
 .footer .footer-top .footer-widget {
     margin-bottom: 30px
 ;
@@ -1841,7 +1936,7 @@ ul, ol {
     align-items: center;
     margin-bottom: 10px;
     margin: auto;
-    width: 50%;
+    width: 100%;
 }
 .footer .footer-top .footer-widget .footer-contact-info-list li {
     margin-bottom: 10px;
@@ -1858,12 +1953,18 @@ ul, ol {
 }
 .footer .copyright {
     background: rgba(255, 255, 255, 0.03);
-    padding: 30px 0;
+ 
 }
 .footer .copyright .copyright-text {
     color: #fff;
     opacity: 0.75;
-    line-height: 38px;
+    
+}
+p.copyright-text {
+    padding: 20px 0px;
+    margin-bottom: 0;
+    text-align: center;
+    font-family: cursive;
 }
 .footer .footer-top .footer-widget .footer-links li:before {
     color: #ff4500;
@@ -1950,4 +2051,23 @@ section#porfolio {
     text-align: right;
     height: 600px;
     width: 100%!important;
+}
+
+section#contact {
+    background-image: url(../gallery/wave.svg);
+    background-position: bottom;
+}
+.videobg {
+    position: absolute;
+    width: 100vw
+;
+    height: auto;
+    top: 0;
+    z-index: -1;
+}
+section#emailSection {
+    position: relative;
+}
+.videobg video {
+    width: 100%;
 }

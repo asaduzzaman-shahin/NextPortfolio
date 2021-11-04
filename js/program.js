@@ -1,3 +1,27 @@
+
+
+
+
+const allbutton = document.querySelectorAll(".btnSound");
+const clickSoundv2 = "../gallery/click.wav";
+
+allbutton.forEach((e)=>{
+e.addEventListener("click",()=>{
+  new Audio(clickSoundv2).play()
+
+})
+})
+
+
+const allInput = document.querySelectorAll(".clickSound");
+const clickSound = "../gallery/mouseClick.mp3"
+allInput.forEach((e)=>{
+e.addEventListener("keypress",()=>{
+  new Audio(clickSound).play()
+
+})
+})
+
 // position menu with 
 const nav = document.querySelector(".nevMenu")
 window.addEventListener("scroll",()=>{
@@ -66,7 +90,7 @@ playBtn.addEventListener("click", function(){
 
 closeBtn.addEventListener("click", function(){
   videoSec.style.display="none";
-  alert("Wants to Close The Video? Please Press OK");
+  alert("Pause the Video before close. Wants to Close The Video? Please Press OK");
 
 });
 
