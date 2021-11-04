@@ -147,6 +147,18 @@ margin-top: 100px;
 
 @media screen and (max-width: 768px) {
 
+    .nevMenu {
+        position: fixed;
+        top: 0;
+        right: 40px;
+        z-index: 2;
+        width: 77%;
+        border-radius: 10px;
+        background: #262626;
+        padding: 10px 0px;
+        overflow: visible!important;
+    }
+
     button.navBtn {
         display: block!important;
     }
@@ -173,7 +185,7 @@ margin-top: 100px;
     #particles-js {
         background-color: #262626;
         position: relative;
-        height: 120vh!important
+        height: 130vh!important
     ;
         min-height: 750px
     ;
@@ -280,6 +292,12 @@ margin-top: 100px;
 
 @media screen and (max-width: 688px) {
 
+
+    .me h1 {
+        font-size: 40px!important;
+        font-weight: bolder;
+        color: #ed2122;
+    }
     .nevMenu {
         position: fixed;
         top: 0;

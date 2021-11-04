@@ -708,6 +708,7 @@ section#videoSec {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    text-align: justify;
 }
 
 .imgLayer2 img {
