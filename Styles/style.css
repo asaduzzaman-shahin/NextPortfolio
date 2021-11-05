@@ -23,28 +23,7 @@
 }
 
 
-.aa{
-    overflow: hidden !important;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.aa:before{
-    content: '';
-    position: absolute;
-    width: var(--size);
-    height: 140%;
-    background: linear-gradient(var(--first-color), var(--second-color));
-    animation: animate var(--speed) linear infinite;
-}
-@keyframes animate{
-    0%{
-        transform: rotate(0deg);
-    }
-    100%{
-        transform: rotate(360deg);
-    }
-}
+
 
 
 body{
@@ -60,6 +39,13 @@ button.navBtn {
     display: none;
 }
 
+section{
+    overflow: hidden;
+}
+
+.contactUs{
+    overflow: hidden;
+}
 .nevMenu nav ul {list-style: none;margin: 0px;padding: 0px;display: flex;}
 
 .myPic {
@@ -103,7 +89,7 @@ padding: 20px
     border-radius: 50px;
     padding: 2px 6px;
     border: none;
-    width: 130px;
+    width: 150px;
     background: #ff4500;
     outline: none;
     box-shadow: inset 1px 1px 10px 6px #000000;
@@ -126,7 +112,33 @@ button.btnStyle span i {
     display: inline-block;
 }
 
+.footer-top{
+    position: relative;
+}
 
+.count a {
+    color: tomato;
+    padding: 5px;
+    font-size: 18px;
+    
+}
+.count:hover{
+box-shadow: inset 1px 1px 10px 6px #000000;
+}
+.count{
+    border-radius: 30px 0px;
+    box-shadow: 1px 1px 10px 6px #000000;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #262626;
+    text-align: center;
+    z-index: 200;
+    bottom: 0;
+    right: 25px;
+}
 
 .btnStyle:hover {
     background: white;
@@ -268,9 +280,12 @@ button.btnStyle span i {
 section#\#about {
     margin: 100px 0px;
 }
+
+
 .aboutPic {
     position: relative;
     box-shadow: inset 1px 1px 10px 6px #000000;
+   
 }
 section#\#about {
     margin: 100px 0px;
@@ -638,7 +653,7 @@ box-shadow: inset 1px 1px 10px 6px #000000;
 .nevMenu {
     position: fixed;
     top: 0;
-    right: 40px;
+    right: 0px;
     z-index: 2;
     width: 77%;
     border-radius: 10px;
@@ -663,6 +678,14 @@ section#videoSec {
     background-color: black;
     display: none;
 }
+
+div#hireme {
+    overflow-x: hidden;
+}
+
+
+
+
 .videoplayer {
     width: 80%;
     height: 800px;
@@ -697,8 +720,12 @@ section#videoSec {
 
 
 
-
-
+.aniLeftToRight{
+    animation: leftToRight 2s cubic-bezier(0.25, 0.1, 0.55, 0.33) ;
+}
+.aniRightToLeft{
+    animation: rightToLeft 2s cubic-bezier(0.25, 0.1, 0.55, 0.33);
+}
 
 
 .me {
@@ -709,11 +736,32 @@ section#videoSec {
     justify-content: center;
     align-items: flex-start;
     text-align: justify;
+    animation: leftToRight 2s cubic-bezier(0.25, 0.1, 0.55, 0.33) ;
+    transform: translate();
+}
+
+@keyframes leftToRight{
+    0%{
+        transform:translate(-1500px)
+    }
+    100%{
+        transform:translate(0px)
+    }
+}
+
+@keyframes rightToLeft{
+    0%{
+        transform:translate(1500px)
+    }
+    100%{
+        transform:translate(0px)
+    }
 }
 
 .imgLayer2 img {
     background: transparent;
     width: 100%;
+    animation: rightToLeft 2s cubic-bezier(0.25, 0.1, 0.55, 0.33) ;
 }
 
 

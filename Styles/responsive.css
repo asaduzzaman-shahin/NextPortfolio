@@ -301,7 +301,6 @@ margin-top: 100px;
     .nevMenu {
         position: fixed;
         top: 0;
-        right: 25px!important
     ;
         z-index: 2;
         border-radius: 10px

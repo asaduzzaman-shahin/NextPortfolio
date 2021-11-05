@@ -1,5 +1,11 @@
 
-
+var xhr = new XMLHttpRequest();
+xhr.open("GET", "https://api.countapi.xyz/hit/mysite.com/visits");
+xhr.responseType = "json";
+xhr.onload = function() {
+    document.getElementById('countNumb').innerText = this.response.value;
+}
+xhr.send();
 
 
 const allbutton = document.querySelectorAll(".btnSound");
@@ -108,7 +114,7 @@ $(document).ready(function(){
   $('.myBlogs').slick({
     type: Boolean,
     default:false,
-    enables:autoplay,
+    enables:"autoplay",
   });
 });
 
