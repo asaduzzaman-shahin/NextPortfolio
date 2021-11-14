@@ -29,8 +29,11 @@
 </head>
 
 <body>
+   
 
     <header>
+
+        
         <!-- Main Menu -->
 
         <div class="menuWraper">
@@ -38,7 +41,7 @@
                 
                 <div class="logo col-lg-2 col-md-2 col-sm-12" >
                    
-                    <img src="gallery/logo1.png" alt="" data-aos="fade-down-right">
+                    <img id="logoBg" src="gallery/logo1.png" alt="" data-aos="fade-down-right">
                 </div>
                 <div class=" col-lg-10 col-md-10 col-sm-12">
                    <div class="nevMenu">
@@ -75,8 +78,8 @@
             <div class="row">
 
                 <div class="me col-lg-7 col-md-7 col-sm-12">
-                    <h1>I'm</h1>
-                    <h1>Asaduzzaman Shahin</h1>
+                    <h1 id="t1">I'm</h1>
+                    <h1 id="t2">Asaduzzaman Shahin</h1>
                     <p>
                         I am a google certified adword and FB ads specialist with 2 years of experience and also I am a professional full-time web designer and developer, Expert in PSD to HTML, I have good knowledge of web design, such as PSD to HTML. Pigma to HTML any file converted to HTML. My goal is to create amazing websites and web-based applications that drive your business. Digital marketer))-- 2 Years of experience! Facebook Ads Campaign Management, Email Marketing, Virtual assistant, Data entry, Video making, and content creator.
                     </p>
@@ -120,6 +123,13 @@
 
     </header>
     <main>
+
+        <section id="bgFeature">
+            <div class="imgsec">
+                <img src="https://wallpaperaccess.com/full/427852.jpg"
+                alt="" alt="img">
+            </div>
+        </section>
 
         <section id="about">
             <div class="container">
@@ -1276,22 +1286,24 @@
 
 
 
-                        <form action="mailto:shahinkhann14@gmail.com" method="post" enctype="text/plain">
+                        <form id="form"  method="submit" enctype="text/plain">
+                            <!-- action="mailto:shahinkhann14@gmail.com" -->
                             <div class="form">
                                 <div class="row">
-                                    <div class="col-6">
-                                        <input id="mailInput" class="clickSound" type="text" placeholder="Your Name">
+                                    <div class="col-6 formControl">
+                                        <input id="mailInput" class="clickSound name" type="text" placeholder="Your Name">
+                                        <p class="small"></p>
 
                                     </div>
-                                    <div class="col-6">
-                                        <input id="mailInput" class="clickSound" type="text" placeholder="Phone Number">
-
+                                    <div class="col-6 formControl">
+                                        <input id="mailInput" class="clickSound phone" type="text" placeholder="Phone Number">
+                                        <p class="small"></p>
                                     </div>
-                                    <div class="col-6">
-                                        <input id="mailInput" class="clickSound" type="text" placeholder="Email Address">
-
+                                    <div class="col-6 formControl">
+                                        <input id="mailInput" class="clickSound email" type="text" placeholder="Email Address">
+                                        <p class="small"></p>
                                     </div>
-                                    <div class="col-6">
+                                    <div class="col-6 formControl">
                                         <select name="" id="mailInput">
                                             <option value="">Sales</option>
                                             <option value="">Service</option>
@@ -1301,8 +1313,12 @@
 
                                     </div>
                                 </div>
-                                <textarea class="clickSound" name="" id="textArea" cols="30" rows="10" placeholder="Message"></textarea>
-                                <input class="btnSound" id="sendBtn" type="submit" value="Send">
+                                <div class="col-12  formControl">
+                                    <textarea class="clickSound message" name="" id="textArea" cols="30" rows="10" placeholder="Message"></textarea>
+                                    <p class="small"></p>
+                                </div>
+                               
+                                <input class="btnSound" id="sendBtn" type="submit" value="Submit">
                                 <input class="btnSound" id="sendBtn" type="reset" value="reset">
                             </div>
 

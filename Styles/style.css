@@ -115,7 +115,12 @@ button.btnStyle span i {
 .footer-top{
     position: relative;
 }
-
+.small {
+    color: red;
+    background: #ffffff;
+    display: inline;
+    padding: 1px 4px;
+}
 .count a {
     color: tomato;
     padding: 5px;
@@ -139,13 +144,50 @@ box-shadow: inset 1px 1px 10px 6px #000000;
     bottom: 0;
     right: 25px;
 }
+.menuWraper {
+    position: relative;
+}
+.logo {
+    position: absolute;
+}
 
 .btnStyle:hover {
     background: white;
     color: #ff4500;
 }
+.imgsecs {
+    width: 90%;
+    margin: auto;
+    height: 80vh;
+    padding: 30px;
+    box-shadow: inset 1px 1px 10px 6px #000000;
+}
+.imgsec {
+    width: 100vw;
+    background: #262626;
+    box-shadow: inset 1px 1px 10px 6px #000000;
+}
 
+.imgsecs img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    box-shadow: 1px 1px 10px 6px #000000;
+    /* box-shadow: inset 1px 1px 10px 6px #000000; */
+    animation: zoom 17s ease-in infinite;
+    animation-delay: 2s;
+    
+}
 
+@keyframes zoom{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.8);
+    }
+}
 
 .imgLayer2 img {
     background: transparent;
@@ -156,6 +198,10 @@ box-shadow: inset 1px 1px 10px 6px #000000;
     font-size: 50px;
     font-weight: bolder;
     color: #ed2122;
+    box-shadow: inset 1px 1px 10px 6px #000000;
+    padding: 1px 10px;
+    border: 1px solid #3a3a3a;
+    border-radius: 30px 5px 30px 5px;
 }
 
 .me p {
@@ -576,8 +622,8 @@ body{
 #particles-js{
     background-color: #262626;
     position: relative;
+    
     height: 100vh;
-    min-height: 750px;
     width: 100vw
 ;
 }
@@ -618,7 +664,7 @@ section#about {
     height: 160px;
     position: absolute;
     top: 20px;
-    left: 70px;
+    left: 100px;
     z-index: 2;
     box-shadow: inset 1px 1px 10px 6px #000000;
 }
@@ -1924,6 +1970,9 @@ textArea:hover {
 
 .footer {
     background: #171718;
+    background-position: center center;
+    background-size: cover;
+    background-blend-mode: soft-light;
 }
 .footer .footer-top {
     padding: 80px 0 50px 0;

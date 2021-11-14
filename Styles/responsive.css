@@ -291,7 +291,13 @@ margin-top: 100px;
 
 
 @media screen and (max-width: 688px) {
-
+    .imgsecs {
+        width: 90%;
+        margin: auto;
+        height: 450px!important;
+        padding: 30px;
+        box-shadow: inset 1px 1px 10px 6px #000000;
+    }
 
     .me h1 {
         font-size: 40px!important;
@@ -332,7 +338,7 @@ margin-top: 100px;
 
     #particles-js {
       
-        min-height: 900px;
+        min-height: 1010px!important;
     }
 
 
@@ -358,6 +364,8 @@ margin-top: 100px;
 
 
 @media screen and (max-width: 500px){
+
+
     .text {
         margin-top: 10px;
         display: flex;
