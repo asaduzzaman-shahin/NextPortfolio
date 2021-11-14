@@ -2106,19 +2106,22 @@ section#porfolio {
 
 
 ::-webkit-scrollbar-thumb {
-    background: tomato;
-    border-radius: 100px;
+    background: #ff6246;
     height: 100px;
+    box-shadow: inset 1px 1px 20px 0px #000000;
+    background-image: url(http://127.0.0.1:5501/gallery/logo1.png);
+    background-position: center;
+    background-size: contain;
 }
 
 ::-webkit-scrollbar-track {
-    border-radius: 50px;
-    box-shadow: 1px 2px 3px 2px;
+    box-shadow: inset 1px 1px 10px 6px #000000;
+    background: #262626;
 }
 
 ::-webkit-scrollbar {
-    width: 20px;
-    box-shadow: 2px 2px 2px 5px;
+    width: 30px;
+    
 }
 
 
