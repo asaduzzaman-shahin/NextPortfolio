@@ -259,6 +259,7 @@ box-shadow: inset 1px 1px 10px 6px #000000;
     border-top: 4px solid green;
     border-left: 3px solid #d27171c7;
     border-right: 2px solid #fffcfc;
+    background: repeating-radial-gradient(black, transparent 100px);
 }
 
 
